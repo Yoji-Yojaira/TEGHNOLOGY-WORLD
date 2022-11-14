@@ -1,0 +1,437 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --padding-container: 100px 0;
+    --color-title:#001A49;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+header{
+    width: 100%;
+    height: 80px;
+}
+
+.hola::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    background-image: linear-gradient(180deg, #0000008c 1%, #0000008c 100%), url('./image/fondo.jpg');
+    background-size: cover;
+    clip-path: polygon(50% 0%, 100% 0, 100% 64%, 71% 40%, 33% 39%, 0 66%, 0 0);
+    z-index: -1;
+}
+.ancho{
+    width: 100%;
+    height: 80px;
+    margin: auto; 
+}
+.logo img{
+   
+    width: 30%;
+    height: 70px;
+    float: left;
+    padding-top: 10px;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.logo a{
+    color: #0c86be;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    float: left;
+    padding-top: 14px;
+    box-sizing: border-box;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+nav{
+    width: 70%;
+    height: 70px;
+    float: left;
+    text-align: right;
+    padding-top: 24px;
+    box-sizing: border-box;
+}
+
+nav ul li{
+    display: inline;
+}
+
+nav ul li a{
+    color: rgb(250, 250, 250);
+    font-size: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav ul li a:hover{
+    color: #83e710;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+
+.contenido{
+    min-width: 800px;
+    --padding-contenido:0;
+    display: grid;
+    grid-auto-rows: max-content;
+    align-content: center;
+    gap: 1em;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.titulo{
+    color: #bbf125;
+    min-height: 20px;
+    font-size: 3rem;
+}
+.parrafo{
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+
+
+.zxy{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: rgb(19, 18, 18);
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.1s;
+}
+.zxy:hover{
+    background: #a945c7;
+    box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+    transition-delay: 0s;
+ }
+.zxy neon{
+    position: absolute;
+    display: block;
+}
+#span1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent,#a945c7);
+ }
+ .zxy:hover #neon1{
+    left: 100%;
+    transition: 0s;
+}
+ #neon3{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent,#a945c7);
+}
+ .zxy:hover #neon3{
+    right: 100%;
+    transition: 0s;
+    transition-delay: 0.5s;
+}
+#neon2{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#a945c7);
+}
+.zxy:hover #neon2{
+    top: 100%;
+    transition: 0s;
+    transition-delay: 0.25s;
+}
+#neon4{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#a945c7);
+}
+.zxy:hover #neon4{
+    bottom: 100%;
+    transition: 0s;
+    transition-delay: 0.75s;
+}
+/*informacion*/
+
+.informacion{
+    
+    height: 350px;
+    border-color: #e5e5f7;
+    opacity: 0.;
+    background-image:  radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
+    overflow: hidden;
+}
+
+.informacion__contenido{
+    display: grid;
+    grid-template-columns: 1fr    1fr;
+    gap: 1em;
+    align-items: center;
+    
+}
+
+.informacion__picture{
+    min-width: 500px;
+}
+
+.informacion__paragrit{
+    line-height: 1.7;
+    margin-bottom: 15px;
+    text-align: left;
+}
+/*programar */
+
+.informacion__programar{
+    height: 350px;
+    background-color: #afd742;
+    opacity: 0.;
+    background: radial-gradient(circle, transparent 2%, #57cf6d 2%, #468151 1000%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #42d75d 20%, #42d75d 80%, transparent 80%, transparent) 10px 10px, linear-gradient(#ffffff 0.8px, transparent 0.8px) 0 -0.4px, linear-gradient(90deg, #ffffff 0.8px, #42d75d 0.8px) -0.4px 0;
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
+    overflow: hidden;
+}
+
+/*otros*/
+.subtitulo{
+    color: var(--color-title);
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.informacion__img{
+    width: 100%;
+    display: block;
+}
+/*contenido-min*/
+
+.contenido-min{ 
+
+    text-align: center;
+  
+    display: flex;
+    width: 60%;
+    height: 30px;
+    color: #16cc10;
+
+    font-size: 30px;
+    line-height: 30px;
+    position: absolute;
+    top: -9%;
+    right: 13%;
+    bottom: 0;
+    margin: auto;
+
+    overflow: hidden;
+
+}
+
+.contenido-min ul{
+    list-style: none;
+    padding-left: 10px;
+    animation: sustitucion 7s infinite; 
+}
+
+.contenido-min ul p{
+    margin: 0;
+}
+@keyframes sustitucion{
+    0%{margin-top: 0;}
+    20%{margin-top: 0;}
+
+    25%{margin-top: -30px;}
+    50%{margin-top: -30px;}
+
+    55%{margin-top: -60px;}
+    80%{margin-top: -60px;}
+
+    85%{margin-top: -30px;}
+    95%{margin-top: -30px;}
+
+    100%{margin-top: 0;}
+}
+
+
+/*fraces*/
+
+.parraf{
+    font-size: larger;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 60px;
+    
+}
+
+.sub{
+    text-align: center;
+    color: #040b85;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+}
+
+.fraces{
+    background-color: #e5e5f7;
+    
+}
+
+.fraces__contenido{
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    gap: 1em;
+    align-items: center;
+}
+
+.fraces__cuerpo{
+    background-color: rgb(167, 184, 145);
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.fraces__cuerpo--show{
+    pointer-events: unset;
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.fraces__img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 30%;
+}
+
+.fraces__textos{
+    max-width: 700px;
+}
+.fraces__cool{
+    border-color: royalblue;
+    color: rgb(250, 14, 14);
+    display: inline-block;
+    padding: 5px;
+}
+
+.fraces__arrow{
+   width: 90%;
+    cursor: pointer;
+}
+
+.fraces__previas{
+    text-align: left;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.subtitul{
+    color: var(--color-title);
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: rgb(233, 13, 5);
+}
+
+/*footer*/
+
+footer{
+    position: absolute;
+    position: relative;
+    background: aqua;
+    height: auto;
+    width: 100%;
+    font-family: "Open Sans";
+    padding-top: 40px; 
+    color: rgb(10, 9, 9);
+}
+.foret-contenido{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.foret-contenido h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.foret-contenido p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.red{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.red li{
+    margin: 0 10px;
+}
+.red a{
+    text-decoration: none;
+    color: rgb(12, 5, 5);
+}
+.red a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+.red a:hover i{
+    color: rgb(235, 44, 11);
+}
+
+.foret-boton{
+    background: rgb(35, 185, 185);
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+.foret-boton p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.foret-boton span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}

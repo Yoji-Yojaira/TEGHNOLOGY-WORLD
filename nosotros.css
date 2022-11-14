@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    width: 100%;
+    background: aqua;
+    height: 80px;
+}
+
+.hola::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    background-color: rgb(35, 185, 115);
+    background-size: cover;
+    clip-path: polygon(50% 0%, 100% 0, 100% 64%, 71% 40%, 33% 39%, 0 66%, 0 0);
+    z-index: -1;
+}
+.ancho{
+    width: 100%;
+    height: 80px;
+    background: aqua;
+    margin: auto; 
+}
+.logo img{
+   
+    width: 30%;
+    height: 60px;
+    background:aqua;
+    float: left;
+    padding-top: 10px;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.logo a{
+    color: rgb(18, 14, 241);
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    float: left;
+    padding-top: 14px;
+    box-sizing: border-box;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+nav{
+    width: 70%;
+    height: 70px;
+    background: aqua;
+    float: left;
+    text-align: right;
+    padding-top: 24px;
+    box-sizing: border-box;
+}
+
+nav ul li{
+    display: inline;
+}
+
+nav ul li a{
+    color: rgb(8, 8, 8);
+    font-size: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav ul li a:hover{
+    color: #83e710;
+}
+
+
+/*footer*/
+
+footer{
+    position: relative;
+    bottom: 0;
+    background: aqua;
+    height: auto;
+    width: 100%;
+    font-family: "Open Sans";
+    padding-top: 40px; 
+    color: rgb(10, 9, 9);
+}
+.foret-contenido{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.foret-contenido h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.foret-contenido p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.red{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.red li{
+    margin: 0 10px;
+}
+.red a{
+    text-decoration: none;
+    color: rgb(12, 5, 5);
+}
+.red a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+.red a:hover i{
+    color: rgb(235, 44, 11);
+}
+
+.foret-boton{
+    background: rgb(35, 185, 185);
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+.foret-boton p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.foret-boton span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
